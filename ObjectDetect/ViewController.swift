@@ -13,8 +13,11 @@ import Vision
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var appLabel: UILabel!
+    @IBOutlet weak var ndrLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var classificationLabel: UITextView!
+    @IBOutlet weak var mainButton: UIButton!
+    @IBOutlet weak var secondButton: UIBarButtonItem!
     
     let imagePicker = UIImagePickerController()
     
@@ -44,9 +47,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let result = request.results as? [VNClassificationObservation] else {
                 fatalError("Failed to process Image")
             }
-            self.navigationItem.title = "Object Detection"
+            self.navigationItem.title = "Object Recognition"
             self.classificationLabel.text = result.first?.identifier
             self.appLabel.isHidden = true
+            self.ndrLabel.isHidden = true
             print(result)
         }
         let handler = VNImageRequestHandler(ciImage: image)
@@ -57,11 +61,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-
     @IBAction func cameraPressed(_ sender: UIBarButtonItem) {
         present(imagePicker, animated: true, completion: nil)
     }
     
     
+    @IBAction func camPressed(_ sender: UIButton) {
+        present(imagePicker, animated: true, completion: nil)
+        self.mainButton.isHidden = true
+        
+    }
 }
 

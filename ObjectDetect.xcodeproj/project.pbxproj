@@ -13,6 +13,8 @@
 		39AE9BD820FC926100872B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39AE9BD720FC926100872B00 /* Assets.xcassets */; };
 		39AE9BDB20FC926100872B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39AE9BD920FC926100872B00 /* LaunchScreen.storyboard */; };
 		39AE9BE320FC92EA00872B00 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 39AE9BE220FC92E900872B00 /* Inceptionv3.mlmodel */; };
+		39B5690520FCD60C0022D6B5 /* camera-icon-21.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B5690420FCD60B0022D6B5 /* camera-icon-21.png */; };
+		39B5690720FCD95F0022D6B5 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 39B5690620FCD95F0022D6B5 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		39AE9BDA20FC926100872B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39AE9BDC20FC926100872B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39AE9BE220FC92E900872B00 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		39B5690420FCD60B0022D6B5 /* camera-icon-21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon-21.png"; sourceTree = "<group>"; };
+		39B5690620FCD95F0022D6B5 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 				39AE9BD220FC925F00872B00 /* ViewController.swift */,
 				39AE9BD420FC925F00872B00 /* Main.storyboard */,
 				39AE9BD720FC926100872B00 /* Assets.xcassets */,
+				39B5690420FCD60B0022D6B5 /* camera-icon-21.png */,
 				39AE9BE220FC92E900872B00 /* Inceptionv3.mlmodel */,
+				39B5690620FCD95F0022D6B5 /* SqueezeNet.mlmodel */,
 				39AE9BD920FC926100872B00 /* LaunchScreen.storyboard */,
 				39AE9BDC20FC926100872B00 /* Info.plist */,
 			);
@@ -127,6 +133,7 @@
 			files = (
 				39AE9BDB20FC926100872B00 /* LaunchScreen.storyboard in Resources */,
 				39AE9BD820FC926100872B00 /* Assets.xcassets in Resources */,
+				39B5690520FCD60C0022D6B5 /* camera-icon-21.png in Resources */,
 				39AE9BD620FC925F00872B00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 				39AE9BD320FC925F00872B00 /* ViewController.swift in Sources */,
 				39AE9BE320FC92EA00872B00 /* Inceptionv3.mlmodel in Sources */,
 				39AE9BD120FC925F00872B00 /* AppDelegate.swift in Sources */,
+				39B5690720FCD95F0022D6B5 /* SqueezeNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
